@@ -1,0 +1,97 @@
+package classesWithAttributes;
+
+public class Product 
+{
+		public Product(int id, String name, String description, double price, int stockAmount, String color)
+		{
+			this.id = id;
+			this.name = name;
+			this.description = description;
+			this.price = price;
+			this.stockAmount = stockAmount;
+			this.color = color;
+			System.out.println("Parametreli yapıcı block çalıştı");
+		}
+		
+		public Product() 
+		{
+			  System.out.println("Parametresiz yapıcı blok çalıştı Overloading");
+		}
+
+		//Attribute or Field
+	    private int id;
+		private String name; 
+		private String description;
+		private double price;
+		private int stockAmount;
+		private String color;
+		private String kod;
+		
+		//id
+		public int getId() 
+		{
+			return id;
+		}
+		public void setId(int id) 
+		{
+			this.id = id;
+		}
+		
+		//name
+		public String getName() 
+		{
+			return name;
+		}
+		public void setName(String name) 
+		{
+			this.name = name;
+		}
+		
+		//description
+		public String getDescription() 
+		{
+			return description;
+		}
+		public void setDescription(String description) 
+		{
+			this.description = description;
+		}
+		
+		//price
+		public double getPrice() 
+		{
+			return price;
+		}
+		public void setPrice(double price) 
+		{
+			this.price = price;
+		}
+		
+		//stckAmount
+		public int getStockAmount() 
+		{
+			return stockAmount;
+		}
+		public void setStockAmount(int stockAmount) 
+		{
+			this.stockAmount = stockAmount;
+		}
+		
+		//Renk
+		public String getColor() 
+		{
+			return color;
+		}
+		public void setColor(String color) 
+		{
+			this.color = color;
+		}
+		
+		//Kod
+		public String getKod() 
+		{
+			return this.name.substring(0,1)+ id;
+		}
+	
+	
+}
