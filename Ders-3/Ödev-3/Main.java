@@ -110,12 +110,12 @@ public class Main {
 		
 		//test Dao
 			
-			/*update*/
+			/*update instructor2*/
 			//instructor2.setName("AykutUpdate");
 			//instructor2.setLastName("ArslanbağUpdate");
 			//instructorManager.update(instructor2);
 			
-			/*delete*/
+			/*delete instructor2*/
 			//instructorManager.delete(instructor2);
 	}
 
